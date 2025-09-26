@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Desktop-only Web Page — Template</title>
+  </head>
+  <body>
+      <button class="toggle-btn" onclick="sidebar()" >☰</button>
+      <div class="app" role="main">
+      <aside class="sidebar" aria-label="Sidebar" >
+        <div class="brand">
+          <div class="logo" >D</div>
+          <div>
+            <h1>DeskApp</h1>
+            <p>Admin dashboard • Desktop layout</p>
+          </div>
+        </div>
+
+        <div class="search">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden
+          >
+            <path
+              d="M21 21l-4.35-4.35"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <circle
+              cx="11"
+              cy="11"
+              r="6"
+              stroke="currentColor"
+              stroke-width="1.6"
+            ></circle>
+          </svg>
+          <input type="search" placeholder="Search..." aria-label="Search" />
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#">🏠 Dashboard</a>
+          <a href="#">📁 Projects</a>
+          <a href="#">📊 Analytics</a>
+          <a href="#">🧾 Reports</a>
+          <a href="#">⚙️ Settings</a>
+        </nav>
+
+        <div class="profile">
+          <img
+            src="https://via.placeholder.com/48"
+            alt="profile"
+            style="
+              width: 48px;
+              height: 48px;
+              border-radius: 10px;
+              object-fit: cover;
+            "
+          />
+          <div>
+            <div style="font-weight: 700">Akshara</div>
+            <div style="font-size: 13px; color: var(--muted)">
+              Product Manager
+            </div>
+          </div>
+          <div style="margin-left: auto" title="Logout">
+            <button class="ghost">Logout</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div>
+            <div class="breadcrumbs">Home / Dashboard</div>
+            <h2 style="margin: 6px 0 0 0">Welcome back, Akshara 👋</h2>
+          </div>
+          <div class="actions">
+            <button class="ghost">🔔</button>
+            <button class="btn">New Report</button>
+          </div>
+        </div>
+
+        <section class="grid" aria-label="Quick stats">
+          <article class="card">
+            <h3>Active Users</h3>
+            <p style="font-size: 28px; margin-top: 12px">
+              12,483 <span class="pill">+4.2%</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Monthly Revenue</h3>
+            <p style="font-size: 28px; margin-top: 12px">
+              ₹1,24,832 <span class="pill">+1.8%</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Open Tickets</h3>
+            <p style="font-size: 28px; margin-top: 12px">
+              84 <span class="pill">-2%</span>
+            </p>
+          </article>
+        </section>
+
+        <section class="panel" aria-label="Highlights">
+          <div class="panel-left">
+            <h3 style="margin: 0 0 8px 0">This week's overview</h3>
+            <p style="margin: 0; color: var(--muted)">
+              Top-level summary of performance, deliveries and tasks. Use this
+              area for charts, progress bars or other high-visibility
+              components.
+            </p>
+
+            <div class="panel-stats" style="margin-top: 14px">
+              <div class="stat">
+                <h4>74%</h4>
+                <p>Completion</p>
+              </div>
+              <div class="stat">
+                <h4>856</h4>
+                <p>New signups</p>
+              </div>
+              <div class="stat">
+                <h4>24</h4>
+                <p>Deploys</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="min-width: 280px;">
+            <p style="color: var(--muted); margin: 0;  text-align: left">
+              Performance tends to peak on Tuesdays and Thursdays. Consider
+              scheduling major releases mid-week.
+            </p>
+            <div style="margin-top: 12px">
+              <button class="ghost">Export</button>
+              <button class="btn">Analyze</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="table-container" aria-label="Recent activity">
+          <h3 style="margin-top: 0">Recent activity</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Action</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ravi</td>
+                <td>Created project "Orion"</td>
+                <td>Active</td>
+                <td>2025-09-22</td>
+              </tr>
+              <tr>
+                <td>Meera</td>
+                <td>Updated billing</td>
+                <td>Completed</td>
+                <td>2025-09-21</td>
+              </tr>
+              <tr>
+                <td>Jai</td>
+                <td>Raised ticket #431</td>
+                <td>In progress</td>
+                <td>2025-09-20</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
